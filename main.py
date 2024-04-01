@@ -163,11 +163,7 @@ def menusProductos():
 """)
 
 if __name__ == "__main__":
-    
-    # peticion = requests.get("http://154.38.171.54:5008/productos?gama=Ornamentales&cantidadEnEstock_gte=100")
-    # data = json.dumps(peticion.json(), indent=4)
-    # print(data)
-    
+
     while True:
         os.system("clear")
         
@@ -186,7 +182,7 @@ if __name__ == "__main__":
                     opcion = int(input("Seleccione una de las opciones: "))
 
                     if opcion == 1:
-                       client.menuClientesReportes()
+                        client.menuClientesReportes()
                     elif opcion == 2:
                         crudClient.menuCrudClientes()
                     elif opcion == 0:
@@ -211,7 +207,7 @@ if __name__ == "__main__":
                     opcion = int(input("Seleccione una de las opciones: "))
                     if opcion == 1:
                         empl.menuReportesEmpl()
-                    elif opcion == 2: 
+                    elif opcion == 2:
                         crudEmpl.menuCrudEmpl()
                     elif opcion == 0:
                         break
@@ -265,4 +261,3 @@ if __name__ == "__main__":
     # with open("storage/pedido.json", "wb+") as f1:
     #     f1.write(data)
     #     f1.close()
-            
